@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window ceYnqu2" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="ceYnqu2" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="ceYnqu2" class="ceYnqu2"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcviuyYj-iosstatusbar ceYnqu2" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="ceYnqu2"> 
+    <div class="x-panel-top ceYnqu2" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ceYnqu2">
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar ceYnqu2" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="ceYnqu2"> 
+        <div class="x-titlebar-left ceYnqu2" xid="left1" __cid="ceYnqu2"/>  
+        <div class="x-titlebar-title ceYnqu2" xid="title1" __cid="ceYnqu2"> 
+          <span xid="span1" __cid="ceYnqu2" class="ceYnqu2">我的书库</span>
+        </div>  
+        <div class="x-titlebar-right  ceYnqu2" xid="right1" __cid="ceYnqu2">
+          <div class="empty ceYnqu2" __cid="ceYnqu2"/>
+          <i xid="i2" __cid="ceYnqu2" class="ceYnqu2"/>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon ceYnqu2" xid="menuBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-compose&quot;,&quot;label&quot;:&quot;目录&quot;}" __cid="ceYnqu2"> 
+            <i xid="i1" class="icon-compose ceYnqu2" __cid="ceYnqu2"/>  
+            <span xid="span2" __cid="ceYnqu2" class="ceYnqu2">目录</span>
+          </a>
+        </div> 
+      </div>
+    </div>  
+    <div class="x-panel-content  x-scroll-view ceYnqu2" xid="content1" _xid="C6F5C7749DD00001559019B51AB0AE00" style="bottom: 54px;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ceYnqu2"> 
+      <div class="x-scroll ceYnqu2" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="ceYnqu2"> 
+        <div class="x-content-center x-pull-down container ceYnqu2" xid="div6" __cid="ceYnqu2"> 
+          <i class="x-pull-down-img glyphicon x-icon-pull-down ceYnqu2" xid="i3" __cid="ceYnqu2"/>  
+          <span class="x-pull-down-label ceYnqu2" xid="span5" __cid="ceYnqu2">下拉刷新...</span>
+        </div>  
+        <div class="x-scroll-content ceYnqu2" xid="div7" __cid="ceYnqu2">
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list ceYnqu2" xid="list2" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;data&quot;}" __cid="ceYnqu2"> 
+            <ul class="x-list-template list-group hide ceYnqu2" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}" __cid="ceYnqu2"> 
+              <li xid="li2" class="list-group-item ceYnqu2" __cid="ceYnqu2">
+                <div xid="div1" class="media ceYnqu2" __cid="ceYnqu2">
+                  <div xid="div2" class="media-left ceYnqu2" __cid="ceYnqu2">
+                    <img src="" alt="" xid="image1" bind-attr-src="$model.toURL( &quot;./img/&quot; + $object.val(&quot;photo&quot;))" class="img-rounded ceYnqu2" style="height:54px;width:54px;" __cid="ceYnqu2"/>
+                  </div>  
+                  <div xid="div3" class="media-body ceYnqu2" __cid="ceYnqu2">
+                    <h5 xid="h51" bind-text="ref('name')" __cid="ceYnqu2" class="ceYnqu2">h5</h5>  
+                    <div xid="div4" class="pull-right ceYnqu2" __cid="ceYnqu2"> 
+                      <span xid="span4" bind-text="ref('praise')" style="font-size:xx-small;" __cid="ceYnqu2" class="ceYnqu2"/>
+                      <i xid="i4" class="icon-heart ceYnqu2" __cid="ceYnqu2"/>
+                    </div>
+                    <span xid="span3" bind-text="ref('time')" style="font-size:xx-small;" __cid="ceYnqu2" class="ceYnqu2"/>  
+                    <p xid="p1" bind-text=" $object.val(&quot;content&quot;)" style="font-weight:bold;" __cid="ceYnqu2" class="ceYnqu2"/>  
+                    <div xid="div5" style="padding:8px 10px;background-color:#E0E0E0;" bind-visible="$object.val(&quot;commentName&quot;)  != undefined" __cid="ceYnqu2" class="ceYnqu2">
+                      <h5 xid="h52" bind-text="ref('commentName')" style="margin:0" __cid="ceYnqu2" class="ceYnqu2"/>
+                      <span xid="span6" bind-text="ref('commentContent')" __cid="ceYnqu2" class="ceYnqu2"/> 
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul> 
+          </div>
+        </div>  
+        <div class="x-content-center x-pull-up ceYnqu2" xid="div8" __cid="ceYnqu2"> 
+          <span class="x-pull-up-label ceYnqu2" xid="span10" __cid="ceYnqu2">加载更多...</span>
+        </div> 
+      </div>
+    </div>  
+    <div class="x-panel-bottom ceYnqu2" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&quot;height&quot;:54}" __cid="ceYnqu2">
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row text-center ceYnqu2" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceYnqu2"> 
+        <div class="x-col ceYnqu2" xid="col1" __cid="ceYnqu2"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-icon-top ceYnqu2" xid="bookshelvesBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-book&quot;,&quot;label&quot;:&quot;书架&quot;}" __cid="ceYnqu2"> 
+            <i xid="i5" class="icon-android-book ceYnqu2" __cid="ceYnqu2"/>  
+            <span xid="span7" __cid="ceYnqu2" class="ceYnqu2">书架</span>
+          </a> 
+        </div>  
+        <div class="x-col ceYnqu2" xid="col2" __cid="ceYnqu2"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-icon-top ceYnqu2" xid="bookCityBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-stats-bars&quot;,&quot;label&quot;:&quot;书城&quot;}" __cid="ceYnqu2"> 
+            <i xid="i6" class="icon-stats-bars ceYnqu2" __cid="ceYnqu2"/>  
+            <span xid="span8" __cid="ceYnqu2" class="ceYnqu2">书城</span>
+          </a> 
+        </div>  
+        <div class="x-col ceYnqu2" xid="col3" __cid="ceYnqu2"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-icon-top ceYnqu2" xid="personalCenterBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-contact&quot;,&quot;label&quot;:&quot;个人中心&quot;}" __cid="ceYnqu2"> 
+            <i xid="i7" class="icon-android-contact ceYnqu2" __cid="ceYnqu2"/>  
+            <span xid="span9" __cid="ceYnqu2" class="ceYnqu2">个人中心</span>
+          </a> 
+        </div> 
+      </div>
+    </div>
+    <style __cid="ceYnqu2" class="ceYnqu2">.x-panel.pcviuyYj-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcviuyYj-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: 54px;}.x-panel.pcviuyYj-iosstatusbar &gt;.x-panel-bottom {height: 54px;}.iosstatusbar .x-panel.pcviuyYj-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcviuyYj-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcviuyYj-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcviuyYj-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcviuyYj-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcviuyYj-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>
+</div>
